@@ -2,11 +2,9 @@
  * Created by jbasinger on 1/16/2015.
  */
 angular.module('svl.blog').config(function($stateProvider, $urlRouterProvider) {
-  //
-  // For any unmatched url, redirect to /state1
+
   $urlRouterProvider.otherwise("/");
-  //
-  // Now set up the states
+
   $stateProvider
     .state('main', {
       url: "",
@@ -15,6 +13,9 @@ angular.module('svl.blog').config(function($stateProvider, $urlRouterProvider) {
       resolve: {
         postsLoad: function (posts) {
           return posts.load();
+        },
+        configLoad: function(config){
+          return config.load();
         }
       }
     });

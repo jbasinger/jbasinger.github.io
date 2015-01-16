@@ -9,8 +9,11 @@
 
   <!-- External libs -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
-  <script src="js/lib/ui-router/angular-ui-router.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+
+  <!-- Local libs -->
+  <script src="js/lib/ui-router/angular-ui-router.min.js"></script>
+  <script src="js/lib/marked/marked.js"></script>
 
   <!-- Main booting stuff -->
   <script src="js/app/app.js"></script>
@@ -19,12 +22,14 @@
   <!-- Services -->
   <script src="js/app/services/posts.js"></script>
   <script src="js/app/services/config.js"></script>
+  <script src="js/app/services/markdown.js"></script>
 
   <!-- Controllers -->
   <script src="js/app/controllers/main.js"></script>
 
   <meta charset="UTF-8">
   <title>
+    {{title}}
   </title>
 </head>
 <body>

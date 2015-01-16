@@ -1,7 +1,7 @@
 /**
  * Created by jbasinger on 1/16/2015.
  */
-angular.module('svl.blog').factory('posts', ['$q', '$http', '$log', function($q, $http, $log) {
+angular.module('svl.blog').factory('posts', ['$q', '$http', '$log', '$sce', 'markdown', function($q, $http, $log, $sce, markdown) {
 
   var service = {
     posts: [],
@@ -19,7 +19,7 @@ angular.module('svl.blog').factory('posts', ['$q', '$http', '$log', function($q,
       _.each(data.posts, function(post) {
         var req = $http.get('posts/' + post).success(function(postData, postStatus) {
 
-          service.posts.push(postData);
+          service.posts.push($sce.trustAsHtml(markdown(postData)));
 
         }).error(function(postData, postStatus) {
           $log.log('Couldn\'t load post: ' + post);
