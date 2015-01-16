@@ -17,7 +17,7 @@ angular.module('svl.blog').factory('posts', ['$q', '$http', '$log', function($q,
       var httpRequests = [];
 
       _.each(data.posts, function(post) {
-        var req = $http.get('_posts/' + post).success(function(postData, postStatus) {
+        var req = $http.get('posts/' + post).success(function(postData, postStatus) {
 
           service.posts.push(postData);
 
