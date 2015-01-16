@@ -1,0 +1,9 @@
+{
+  "posts": [
+    "2015-01-16-post-test.markdown",
+    "2015-01-16-second-post-test.markdown"
+  ],
+  "drafts":[
+    "2015-01-16-draft-test.markdown"
+  ]
+}

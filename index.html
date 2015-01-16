@@ -1,13 +1,34 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="svl.blog">
 <head lang="en">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>-->
+
+  <!-- External libs -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
+  <script src="js/lib/ui-router/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+
+  <!-- Main booting stuff -->
+  <script src="js/app/app.js"></script>
+  <script src="js/app/routes.js"></script>
+
+  <!-- Services -->
+  <script src="js/app/services/posts.js"></script>
+  <script src="js/app/services/config.js"></script>
+
+  <!-- Controllers -->
+  <script src="js/app/controllers/main.js"></script>
+
   <meta charset="UTF-8">
-  <title>Justin Basinger</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.18/angular.min.js"></script>
+  <title>
+  </title>
 </head>
 <body>
-  <input type="text" ng-model="text.image" style="width: 500px;"/>
-  <br/>
-<img ng-src="{{text.image}}" />
+  <div ui-view>
+  </div>
 </body>
 </html>
