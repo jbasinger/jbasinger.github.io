@@ -25,7 +25,12 @@ a{
   font-size: 40px;
   top: 50px;
   left: 225px;
+  width: 35vw;
   position: absolute;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 100%;
 }
 
 .orb{
