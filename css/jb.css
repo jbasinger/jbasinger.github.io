@@ -7,7 +7,7 @@ a{
 }
 
 .container{
-  width: 50vw;
+  width: 90vw;
   height: 90vh;
   position: absolute;
 }
@@ -15,6 +15,7 @@ a{
 .item{
   position: relative;
   margin: 25px;
+  width: 50vw;
 }
 
 .text{
