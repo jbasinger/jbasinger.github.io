@@ -1,39 +1,45 @@
 <!DOCTYPE html>
-<html ng-app="svl.blog">
+<html>
 <head lang="en">
-
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>-->
-
-  <!-- External libs -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
-
-  <!-- Local libs -->
-  <script src="js/lib/ui-router/angular-ui-router.min.js"></script>
-  <script src="js/lib/marked/marked.js"></script>
-
-  <!-- Main booting stuff -->
-  <script src="js/app/app.js"></script>
-  <script src="js/app/routes.js"></script>
-
-  <!-- Services -->
-  <script src="js/app/services/posts.js"></script>
-  <script src="js/app/services/config.js"></script>
-  <script src="js/app/services/markdown.js"></script>
-
-  <!-- Controllers -->
-  <script src="js/app/controllers/main.js"></script>
-
+  <link rel="stylesheet" href="css/jb.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> 
   <meta charset="UTF-8">
   <title>
-    {{title}}
+    Justin Basinger - Keyboard Tickler
   </title>
 </head>
 <body>
-  <div ui-view>
+  <div class="container">
+
+    <a href="https://www.linkedin.com/in/justin-basinger-374b7520/" target="_blank" rel="noopener noreferrer">
+      <div class="item face">
+        <div class="orb"></div>
+        <div class="text">Justin Basinger</div>
+      </div>
+    </a>
+    
+
+    <a href="http://www.sciencevikinglabs.com/" target="_blank" rel="noopener noreferrer">
+      <div class="item blog">
+        <div class="orb"></div>
+        <div class="text">Blog</div>
+      </div>
+    </a>
+
+    <a href="https://github.com/jbasinger/" target="_blank" rel="noopener noreferrer">
+      <div class="item github">
+        <div class="orb"></div>
+        <div class="text">Github</div>
+      </div>
+    </a>
+
+    <a href="http://ludumdare.com/compo/author/jbasinger/" target="_blank" rel="noopener noreferrer">
+      <div class="item ludum-dare">
+        <div class="orb"></div>
+        <div class="text">Ludum Dare</div>
+      </div>
+    </a>
+
   </div>
 </body>
 </html>
