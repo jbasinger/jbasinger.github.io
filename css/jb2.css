@@ -3,8 +3,13 @@
   font-size: 32px;
 }
 
+body {
+  background: #000;
+  font-family: 'Orbitron', sans-serif;
+}
+
 a{
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -32,12 +37,13 @@ a{
 }
 
 .item:hover{
-    background: -webkit-linear-gradient(left top, #1c92d2, #f2fcfe);
-    background: -o-linear-gradient(bottom right, #1c92d2, #f2fcfe);
-    background: -moz-linear-gradient(bottom right, #1c92d2, #f2fcfe);
-    background: linear-gradient(to bottom right, #1c92d2, #f2fcfe);
-    border-radius: 75px;
-  }
+  color: black;
+  background: -webkit-linear-gradient(left top, #1c92d2, #f2fcfe);
+  background: -o-linear-gradient(bottom right, #1c92d2, #f2fcfe);
+  background: -moz-linear-gradient(bottom right, #1c92d2, #f2fcfe);
+  background: linear-gradient(to bottom right, #1c92d2, #f2fcfe);
+  border-radius: 75px;
+}
 
 .text{
   text-overflow: ellipsis;
