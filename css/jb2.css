@@ -1,0 +1,67 @@
+*{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 32px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+/* Change style @ < 800px; */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+  /*background-color: blue;*/
+}
+
+.item{
+  height: 150px;
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  /*background-color: red;*/
+}
+
+.item:hover{
+    background: -webkit-linear-gradient(left top, #1c92d2, #f2fcfe);
+    background: -o-linear-gradient(bottom right, #1c92d2, #f2fcfe);
+    background: -moz-linear-gradient(bottom right, #1c92d2, #f2fcfe);
+    background: linear-gradient(to bottom right, #1c92d2, #f2fcfe);
+    border-radius: 75px;
+  }
+
+.text{
+  text-overflow: ellipsis;
+  margin-left: 15px;
+}
+
+.orb{
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+}
+
+.face .orb{
+  background-image: url("../img/my_face.png");
+}
+
+.blog .orb{
+  background-image: url("../img/blog.png");
+}
+
+.github .orb{
+  background-image: url("../img/github.png");
+}
+
+.ludum-dare .orb{
+  background-image: url("../img/ludumdare.png");
+}
